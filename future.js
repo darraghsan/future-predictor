@@ -7,7 +7,6 @@ const prompt = require('prompt-sync')({sigint: true});
 //get user age
 const age = prompt('Enter your age');
 
-
 const min = Math.ceil(Number(age));
 const max = Math.floor(110);
 
@@ -18,12 +17,8 @@ console.log(`You will die at ${deathAge} years old.`);
 
 // ###########################
 
-
-
 // ### Predict wealth ###
+const money = Math.floor(Math.random() * 200000000);
+console.log(`You will be worth ${money} dollars at your death.`);
 
-//predict kids
-//array to hold positive words
-const positiveWords = [''];
-
-const negativeWords = [];
+// ### Output positive or negative outcome ###
